@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>AI 俄羅斯方塊</title>
+    <title>俄羅斯方塊 - 遺傳突變算法</title>
 
     <link href="style/main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="container">
-      <h1 class="header">AI 俄羅斯方塊</h1>
+      <h1 class="header">俄羅斯方塊 - 遺傳突變算法</h1>
 
       <div class="game-container">
         <canvas
           id="grid-canvas"
           class="grid"
-          width="200px"
-          height="400px"
+          width="300px"
+          height="600px"
         ></canvas>
         <div class="controls-container">
           <div id="score-container" class="score-container">0</div>
@@ -30,12 +30,23 @@
               height="80px"
             ></canvas>
           </div>
-          <a id="ai-button" class="start-ai-button">AI</a>
+          <a id="ai-button" class="start-ai-button">自動運行</a>
           <a id="reset-button" class="reset-button">重來</a>
         </div>
       </div>
-
-      <script src="js/polyfill.js"></script>
     </div>
+
+    <script src="js/polyfill.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/piece.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/stopwatch.js"></script>
+    <script src="js/game_manager.js"></script>
+    <script src="js/random_piece_generator.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/tuner.js"></script>
+    <script>
+      var manager = new GameManager();
+    </script>
   </body>
 </html>
