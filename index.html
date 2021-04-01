@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AI 俄羅斯方塊</title>
+
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">AI 俄羅斯方塊</h1>
+
+      <div class="game-container">
+        <canvas
+          id="grid-canvas"
+          class="grid"
+          width="200px"
+          height="400px"
+        ></canvas>
+        <div class="controls-container">
+          <div id="score-container" class="score-container">0</div>
+          <div id="next-container" class="next-container">
+            <canvas
+              id="next-canvas"
+              class="next-canvas"
+              width="80px"
+              height="80px"
+            ></canvas>
+          </div>
+          <a id="ai-button" class="start-ai-button">AI</a>
+          <a id="reset-button" class="reset-button">重來</a>
+        </div>
+      </div>
+
+      <script src="js/polyfill.js"></script>
+    </div>
+  </body>
+</html>
