@@ -2,7 +2,7 @@
 
 沒有使用框架，直接用 10%sigma 作為變形依據
 
-[線上 Demo](https://psheon.github.io/js-genetic-algorithm-tetris)
+[線上 Demo](https://psheon.github.io/js-genetic-algorithm-tetris/index.html)
 
 遊戲玩法：
 
